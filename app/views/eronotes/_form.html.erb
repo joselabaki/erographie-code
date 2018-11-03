@@ -1,0 +1,7 @@
+<%= form_with(model: @eronote, local: true) do |form| %>
+      <%= form.file_field :eromage %>
+      <%=form.text_field :body %>
+      <%= form.submit "Did it!"%>
+
+
+<% end %>
