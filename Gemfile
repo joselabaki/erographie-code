@@ -63,3 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
 gem 'activerecord-reset-pk-sequence'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'devise'
+gem 'browser'
+gem 'jquery-rails'
+gem 'inline_svg'
