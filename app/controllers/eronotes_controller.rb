@@ -1,4 +1,9 @@
 class EronotesController < ApplicationController
+
+
+  before_action :authenticate_user!, :only => [:index, :show]
+
+
   def index
     @eronotes = Eronote.all
   end
@@ -16,16 +21,17 @@ class EronotesController < ApplicationController
     render 'new'
   end
   end
-
-
-
   def new
     @eronote = Eronote.new
   end
+
+end
+
+def thanks
 end
 
 private
 
 def eronote_params
-  params.require(:eronote).permit(:eromage , :body)
+  params.require(:eronote).permit(:eromage , :body )
 end

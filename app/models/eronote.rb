@@ -3,4 +3,5 @@ class Eronote < ApplicationRecord
 mount_uploader :eromage , EromagesUploader
 
 validates_presence_of :eromage
+
 end
