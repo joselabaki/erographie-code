@@ -16,7 +16,7 @@ class EronotesController < ApplicationController
   def create
   @eronote = Eronote.new(eronote_params)
   if @eronote.save
-  redirect_to @eronote
+  redirect_to "/thanks"
   else
     render 'new'
   end
