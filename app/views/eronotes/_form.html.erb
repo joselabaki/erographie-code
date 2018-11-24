@@ -1,23 +1,23 @@
 <div class="wrapper">
-<%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
-<% if @eronote.errors.any? %>
-     <% @eronote.errors.full_messages.each do |msg| %>
-       <label><%= msg %></label>
-     <% end %>
-     <% end %>
+  <div class="logo"><%= inline_svg 'logo.svg' %> </div>
+  <div class="form">
+        <%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
+        <% if @eronote.errors.any? %>
+             <% @eronote.errors.full_messages.each do |msg| %>
+               <label><%= msg %></label>
+             <% end %>
+             <% end %>
 
-      <%= form.file_field :eromage, required: true%>
-      <%=form.text_field :body %>
-      <%= form.submit "Did it!"%>
+              <%= form.file_field :eromage, required: true%>
+              <%=form.text_field :body %>
+              <%= form.submit "Did it!"%>
 
 
-<% end %>
-
-<div class="progress">
-  <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-    0
+        <% end %></div>
+  <!-- <p> What font is being used here???</p> -->
+  <div class="bottom">
+  <div class="link-1">ABOUT</div>
+    <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
+    <div class="link-2">FR - EN</div>
   </div>
-</div>
-<p> What font is being used here???</p>
-
 </div>
