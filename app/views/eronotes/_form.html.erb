@@ -1,4 +1,5 @@
-<div class="wrapper"><%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
+<div class="wrapper">
+<%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
 <% if @eronote.errors.any? %>
      <% @eronote.errors.full_messages.each do |msg| %>
        <label><%= msg %></label>
@@ -17,4 +18,6 @@
     0
   </div>
 </div>
+<p> What font is being used here???</p>
+
 </div>
