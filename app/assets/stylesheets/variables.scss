@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Untitled Sans';
+    src:font-url('UntitledSansWeb.ttf');
+
+}
+
+@font-face {
+    font-family: 'Untitled Serif';
+    src:font-url('UntitledSerifWeb.otf');
+}
+
+@font-face {
+  font-family: 'Serif Italic';
+    src:font-url('Renamed.ttf');
+}
+
+ html{height: 100%;
+ background-color: black;
+}
+
+$mycolor: #E2DEDC;

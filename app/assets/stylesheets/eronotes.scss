@@ -1,9 +1,13 @@
 // Place all the styles related to the eronotes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'variables' ;
+
 .wrapper{
   width:500px;
   position: absolute;
   left:200px;
   top:200px;
+  font-family: "Untitled Sans";
+  color: $mycolor
 }
