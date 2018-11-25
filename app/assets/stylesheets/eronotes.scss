@@ -20,6 +20,7 @@
 .link-1 , .link-2 {
   color: $mycolor;
   a{
+    color: $mycolor;
     text-decoration: none;
     &:visited { color: $mycolor}
   }
@@ -72,4 +73,11 @@ textarea{
 
 textarea:focus {
     outline: none !important;
+}
+
+/////
+.back-link{
+  a{color: $mycolor; text-decoration: none;
+  &:visited{color: $mycolor; text-decoration: none;}
+  }
 }

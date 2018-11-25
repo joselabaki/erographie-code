@@ -26,7 +26,7 @@
 
         <% end %></div>
   <div class="bottom">
-    <div class="link-1"><%= t :about %></div>
+    <div class="link-1"><%= link_to t('about') , about_path %></div>
     <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
     <div class="link-2"><%= link_to "FR" , locale: :fr %> - <%= link_to "EN" , locale: :en%></div></div>
 </div>

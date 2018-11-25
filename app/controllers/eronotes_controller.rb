@@ -30,6 +30,10 @@ end
 def thanks
 end
 
+def about
+end
+
+
 private
 
 def eronote_params
