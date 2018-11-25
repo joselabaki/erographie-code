@@ -2,22 +2,31 @@
   <div class="logo"><%= inline_svg 'logo.svg' %> </div>
   <div class="form">
         <%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
-        <% if @eronote.errors.any? %>
+            <% if @eronote.errors.any? %>
              <% @eronote.errors.full_messages.each do |msg| %>
                <label><%= msg %></label>
              <% end %>
              <% end %>
 
-              <%= form.file_field :eromage, required: true%>
-              <%=form.text_field :body %>
-              <%= form.submit "Did it!"%>
+            <div class="browse">
+              <%= form.file_field :eromage, required: true , hidden: "hidden", id:"real-file"  %>
+              <p id="browse-btn">browse images</p>
+              <span id="customTxt">no file chosen</span>
+              </div>
+              <div class="body-text">
+              <%=form.text_area :body , placeholder: "optional short story " , :cols => 30, :rows => 10 %>
+            </div>
 
+
+              <div>
+              <%= form.submit id: "upload-btn" , hidden: "hidden" %>
+              <span id="upTxt">upload</span>
+
+              </div>
 
         <% end %></div>
-  <!-- <p> What font is being used here???</p> -->
   <div class="bottom">
-  <div class="link-1">ABOUT</div>
+    <div class="link-1">ABOUT</div>
     <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
-    <div class="link-2">FR - EN</div>
-  </div>
+    <div class="link-2">FR - EN</div></div>
 </div>

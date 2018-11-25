@@ -1,4 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
+  // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
@@ -17,3 +17,36 @@
 
 //= require_self
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+
+  const realFileBtn = document.getElementById("real-file");
+  const customBtn = document.getElementById("browse-btn");
+  const customTxt = document.getElementById("customTxt");
+
+  customBtn.addEventListener("click", function() {
+    realFileBtn.click();
+  });
+
+  realFileBtn.addEventListener("change", function() {
+    if (realFileBtn.value) {
+      customTxt.innerHTML = 'chosen ' +  realFileBtn.value.match(
+        /[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+
+
+    } else {
+      customTxt.innerHTML = "no file chosen";
+    }
+  });
+
+  const realUpBtn = document.getElementById("upload-btn");
+  const customUpBtn = document.getElementById("upTxt");
+
+  customUpBtn.addEventListener("click", function() {
+    realUpBtn.click();
+  });
+
+
+
+});
