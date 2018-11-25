@@ -23,6 +23,8 @@ document.addEventListener("turbolinks:load", function() {
   const realFileBtn = document.getElementById("real-file");
   const customBtn = document.getElementById("browse-btn");
   const customTxt = document.getElementById("customTxt");
+  const customUpBtn = document.getElementById("upTxt");
+
 
   customBtn.addEventListener("click", function() {
     realFileBtn.click();
@@ -34,14 +36,13 @@ document.addEventListener("turbolinks:load", function() {
         /[\/\\]([\w\d\s\.\-\(\)]+)$/
       )[1];
 
-
+      customUpBtn.style.color = "#E2DEDC"
     } else {
       customTxt.innerHTML = "no file chosen";
     }
   });
 
   const realUpBtn = document.getElementById("upload-btn");
-  const customUpBtn = document.getElementById("upTxt");
 
   customUpBtn.addEventListener("click", function() {
     realUpBtn.click();

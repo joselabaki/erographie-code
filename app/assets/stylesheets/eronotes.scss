@@ -56,6 +56,10 @@
   cursor: default;
 }
 
+#upTxt{
+  color:rgb(50,50,50);
+}
+
 /////////
 textarea{
   -webkit-appearance: none;
@@ -64,7 +68,7 @@ textarea{
   border-bottom: dotted 1px $mycolor;
   background-color: transparent;
   width: 100%;
-  color: $mycolor;
+  color:$mycolor;
   resize: none;
   padding-top: 10px;
   font-family: "Untitled Sans"
