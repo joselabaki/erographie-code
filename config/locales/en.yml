@@ -31,3 +31,8 @@
 
 en:
   hello: "Hello world"
+  browse: "browse images"
+  option: "optional short story"
+  file: "no file chosen"
+  upload: "upload"
+  about: "ABOUT"

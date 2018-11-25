@@ -17,10 +17,17 @@
 
 }
 
+.link-1 , .link-2 {
+  color: $mycolor;
+  a{
+    text-decoration: none;
+    &:visited { color: $mycolor}
+  }
+}
 
 .bottom{
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +42,7 @@
   padding: 15px;
   padding-left: 0px;
   display: inline-block;
+  cursor: pointer;
 }
 #browse-btn{
   padding-top: 0px;
@@ -44,6 +52,7 @@
 
 #customTxt{
   color: grey;
+  cursor: default;
 }
 
 /////////
@@ -61,6 +70,6 @@ textarea{
 
 }
 
-.body-text{
-
+textarea:focus {
+    outline: none !important;
 }

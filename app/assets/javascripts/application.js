@@ -30,7 +30,7 @@ document.addEventListener("turbolinks:load", function() {
 
   realFileBtn.addEventListener("change", function() {
     if (realFileBtn.value) {
-      customTxt.innerHTML = 'chosen ' +  realFileBtn.value.match(
+      customTxt.innerHTML =  realFileBtn.value.match(
         /[\/\\]([\w\d\s\.\-\(\)]+)$/
       )[1];
 
