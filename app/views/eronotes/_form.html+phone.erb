@@ -1,0 +1,33 @@
+<div class="wrapper-phone">
+  <div class="logo"><%= inline_svg 'logo.svg' %> </div>
+  <div class="form-phone">
+        <%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
+            <% if @eronote.errors.any? %>
+             <% @eronote.errors.full_messages.each do |msg| %>
+               <label><%= msg %></label>
+             <% end %>
+             <% end %>
+
+            <div class="browse">
+              <%= form.file_field :eromage, required: true , hidden: "hidden", id:"real-file"  %>
+              <p id="browse-btn"><%= t :browse %></p>
+              <span id="customTxt"><%= t :file %></span>
+              <span id="remove" class="hidden"> x </span>
+              </div>
+              <div class="body-text">
+              <%=form.text_area :body , :cols => 30, :rows => 5 ,  placeholder: "#{I18n.t 'option'}"%>
+            </div>
+
+
+              <div>
+              <%= form.submit id: "upload-btn" , hidden: "hidden" %>
+              <span id="upTxt" class="disabled"><%= t :upload %></span>
+
+              </div>
+
+        <% end %></div>
+  <div class="bottom-phone">
+    <div class="link-1"><%= link_to t('about') , about_path %></div>
+    <div class="illustration-phone"> <%= inline_svg "Illu.svg" %></div>
+    <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div></div>
+</div>

@@ -1,0 +1,92 @@
+@import 'variables' ;
+
+.wrapper-phone{
+  width:300px;
+  font-family: "Untitled Sans";
+  color: $mycolor;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
+
+.wrapper-phone-about{
+  width:300px;
+  font-family: "Untitled Sans";
+  color: $mycolor;
+  margin: 0 auto;
+  margin-top: 50px;
+
+}
+
+.form-phone{
+  margin-top: 70px;
+}
+
+.bottom-phone{
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  width: 250px;
+  font-family: "Untitled Sans";
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+
+.illustration-phone{
+  width: 30px;
+}
+
+////
+.about-section-phone{
+  font-size: 14px;
+}
+
+.abouttile-phone{
+  font-size: 17px;
+}
+
+.bottom-phone-about{
+  // margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 300px;
+  font-family: "Untitled Sans";
+  text-transform: uppercase;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  background-color: black;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+.about-section-phone{
+  font-size: 14px;
+}
+
+.abouttile-phone{
+  font-size: 17px;
+}
+
+.up-phone{
+  margin-top: 80px;
+}
+
+.faq-phone{
+  margin-top: 60px;
+  padding-bottom: 100px;
+  font-size: 14px;
+
+}

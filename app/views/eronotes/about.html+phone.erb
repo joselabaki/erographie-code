@@ -1,0 +1,19 @@
+<div class="wrapper-phone-about">
+  <div class="about-section-phone">
+  <p class="abouttile-phone"><%= t('about') %></p>
+  <p class="intro"><%= t('intro_html') %></p>
+  <p class="title"><%= t('title_html') %></p>
+  <p class="steps"><%= t('steps_html') %></p>
+  <p class="cloture"><%= t('cloture_html') %></p>
+</div>
+  <div class="faq-phone">
+    <span class="abouttile-phone">FAQ</span>
+    <span class="faq"><%= t('faq_html') %></span>
+  </div>
+
+<div class="bottom-phone-about up-phone">
+  <div class="link-1"><%= link_to t('back') , root_path  %></div>
+  <div class="illustration-phone"> <%= inline_svg "Illu.svg" %></div>
+  <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div>
+</div>
+</div>
