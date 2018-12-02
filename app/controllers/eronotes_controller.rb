@@ -33,6 +33,14 @@ end
 def about
 end
 
+  def destroy
+  @eronote = Eronote.find(params[:id])
+  @eronote.destroy
+
+  redirect_to eronotes_path
+
+end
+
 
 private
 
