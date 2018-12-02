@@ -14,6 +14,6 @@
 <div class="bottom up">
   <div class="link-1"><%= link_to t('back') , root_path  %></div>
   <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
-  <div class="link-2"><%= link_to "FR" , locale: :fr %> - <%= link_to "EN" , locale: :en%></div>
+  <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div>
 </div>
 </div>

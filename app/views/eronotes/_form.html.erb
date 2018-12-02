@@ -12,6 +12,7 @@
               <%= form.file_field :eromage, required: true , hidden: "hidden", id:"real-file"  %>
               <p id="browse-btn"><%= t :browse %></p>
               <span id="customTxt"><%= t :file %></span>
+              <span id="remove" class="hidden"> x </span>
               </div>
               <div class="body-text">
               <%=form.text_area :body , :cols => 30, :rows => 5 ,  placeholder: "#{I18n.t 'option'}"%>
@@ -28,5 +29,5 @@
   <div class="bottom">
     <div class="link-1"><%= link_to t('about') , about_path %></div>
     <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
-    <div class="link-2"><%= link_to "FR" , locale: :fr %> - <%= link_to "EN" , locale: :en%></div></div>
+    <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div></div>
 </div>

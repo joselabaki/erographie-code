@@ -24,6 +24,8 @@ document.addEventListener("turbolinks:load", function() {
   const customBtn = document.getElementById("browse-btn");
   const customTxt = document.getElementById("customTxt");
   const customUpBtn = document.getElementById("upTxt");
+  const empty = document.getElementById('remove');
+
 
 
   customBtn.addEventListener("click", function() {
@@ -36,7 +38,17 @@ document.addEventListener("turbolinks:load", function() {
         /[\/\\]([\w\d\s\.\-\(\)]+)$/
       )[1];
 
-      customUpBtn.style.color = "#E2DEDC"
+      customUpBtn.style.color = "#E2DEDC";
+      empty.classList.remove("hidden");
+      empty.addEventListener("click", function() {
+                    realFileBtn.value = "";
+                    customUpBtn.style.color = "#323232";
+                    empty.className += "hidden"
+                    if (document.location.pathname.indexOf("/en/") == 0){
+                    customTxt.innerHTML = "no file chosen";
+                    } else {
+                    customTxt.innerHTML = "aucune  image";}});
+
     } else {
       customTxt.innerHTML = "no file chosen";
     }
@@ -47,6 +59,7 @@ document.addEventListener("turbolinks:load", function() {
   customUpBtn.addEventListener("click", function() {
     realUpBtn.click();
   });
+
 
 
 
