@@ -8,13 +8,17 @@ fr:
   about: "À PROPOS"
   back: "retour"
   thanks: "merci"
-  about-p_html: "
-    Cette campagne invite à la création d’une police de caractères collective:<br>
-    erographie  (eros – graphia).<br><br>
-    Pour participer:<br>
-    1. Ecrire une lettre ou un chiffre juste au moment de l’orgasme.<br>
-    Prendre une image du résultat<br>
-    L’envoyer anonymement sur le site (anecdote optionnelle ).<br>
-
-    Les glyphes reçus seront triés en 5 catégories fontes: de “quickie” pour ultra light a “epectase” pour “black” .
-    Ces caractères nés pendant la petite mort de plus de 3000 créateurs font des mots écrit en Erographie une orgie universelle ; notre bacchanale graphique."
+  intro_html: "Cette campagne invite à la création d’une police de caractères collective:"
+  title_html: "&eacute;rographie  (eros – graphia)"
+  steps_html: "
+              <p>Pour participer:</p>
+              <p>1. &eacute;crire une lettre ou un chiffre juste au moment de l’orgasme.</p>
+              <p>2. prendre une image du résultat</p>
+              <p>3. l’envoyer anonymement sur le site (anecdote optionnelle ).</p>"
+  cloture_html: "
+                Les glyphes reçus seront triés en 5 catégories: de “quickie” pour
+                ultra light a “epectase” pour “black”.
+                Ces caractères n&eacute;s pendant la petite mort de plus de 3000 créateurs font des mots écrit en
+                Erographie une orgie universelle ;
+                notre bacchanale graphique."
+  faq_html: "No yet"
