@@ -1,33 +1,4 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
+
 
 en:
   hello: "Hello world"
@@ -37,13 +8,33 @@ en:
   upload: "upload"
   about: "ABOUT"
   thanks: "thanks"
-  back: "back"
-  about-p_html: "This is a campaign for the creation of a open-source typeface : erographie(eros – graphia).
+  back: "home"
+  intro_html: "This is a campaign for the creation of a open-source typeface"
+  title_html: "&eacute;rographie  (<i>&eacute;r&ocirc;s</i> : desire – <i>graphein</i> : write / produce an image)"
+  steps_html: "
+              <p>To participate:</p>
+              <p>1. Write down one letter or number <strong>during an orgasm.</strong> </p>
+              <p>2. Take a picture of the result </p>
+              <p>3. Upload it on the site (with an optional anecdote).</p>"
+  cloture_html: "
+                The produced glyphs will be sorted into 5 fonts :
+                from &laquo; quickie &raquo; for
+                ultra-light to &laquo; &eacute;pectase &raquo; for black.<br>
+                Since the characters were made during the <i>little death</i> of more than 3000 people,
+                every word written in Erography embodies a universal orgy; <i>our graphic bacchanale.</i>"
 
-           To participate :
-           1. Write down 1 letter just at the moment of oragsm
-           2. Take a picture of the result
-           3. Upload it on the site (with an optional anecdote)
-           The produced glyphs will be sorted into 5 fonts : from quickie for ultra-light to epectase for ultra-bold.
-           Since the characters were made during the little death of more than 3000 people, every word written in Erography embodies a universal orgy; our graphic bacchanale.
-           "
+  faq_html: >
+            <p><span class="question">Why?</span><br>
+            The typeface use will be revealed on the release date</p>
+            <p><span class="question">What can I write on?</span><br>
+            On every surface where the handwriting is readable : paper, wall, tablecloth  <i>etc …</i>
+             As long as the character is legible, the surface or the medium is irrelevant</p>
+            <p><span class="question">What to write in the “short story” field?</span><br>
+            It’s an optional field to write something funny or weird about the origin of the letter or the orgasm’s
+            circumstances for example.</p>
+            <p><span class="question">Is it really anonymous?</span><br>
+            We have no way of finding out who uploaded the image : no email taken , no name , no number.</p>
+            <p><span class="question">Where to find the finished product?</span><br>
+            The typeface and the fonts will be displayed on this website on the xx/xx/xx. along with short-movie / documentary. </p>
+            <p><span class="question">More questions?</span><br>
+            <span id="mailus"><a href="mailto:contact@erographie.com"> contact us </a></span></p>

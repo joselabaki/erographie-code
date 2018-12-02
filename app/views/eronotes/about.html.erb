@@ -1,12 +1,19 @@
 <div class="wrapper">
-<div class="about-section">
-<p class="intro"><%= t('intro_html') %></p>
-<p class="title"><%= t('title_html') %></p>
-<p class="steps"><%= t('steps_html') %></p>
-<p class="cloture"><%= t('cloture_html') %></p>
-<p class="faq"><%= t('faq_html') %></p>
+  <div class="about-section">
+  <p class="abouttile"><%= t('about') %></p>
+  <p class="intro"><%= t('intro_html') %></p>
+  <p class="title"><%= t('title_html') %></p>
+  <p class="steps"><%= t('steps_html') %></p>
+  <p class="cloture"><%= t('cloture_html') %></p>
 </div>
-<div class="back-link">
-<%= link_to t('back') , root_path %>
+  <div class="faq">
+    <span class="abouttile">FAQ</span>
+    <span class="faq"><%= t('faq_html') %></span>
+  </div>
+
+<div class="bottom up">
+  <div class="link-1"><%= link_to t('back') , root_path  %></div>
+  <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
+  <div class="link-2"><%= link_to "FR" , locale: :fr %> - <%= link_to "EN" , locale: :en%></div>
 </div>
 </div>

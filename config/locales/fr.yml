@@ -4,21 +4,34 @@ fr:
   browse: "rechercher l'image"
   option: "anecdote optionelle"
   file: "aucune image"
-  upload: "publier"
+  upload: "envoyer"
   about: "À PROPOS"
-  back: "retour"
+  back: "accueil"
   thanks: "merci"
-  intro_html: "Cette campagne invite à la création d’une police de caractères collective:"
-  title_html: "&eacute;rographie  (eros – graphia)"
+  intro_html: "Cette campagne invite &agrave; la cr&eacute;ation d’une police de caract&egrave;res collective:"
+  title_html: "&eacute;rographie  (<i>&eacute;r&ocirc;s</i> : d&eacute;sir – <i>graphein</i> : &eacute;crire / aboutir &agrave une image)"
   steps_html: "
               <p>Pour participer:</p>
-              <p>1. &eacute;crire une lettre ou un chiffre juste au moment de l’orgasme.</p>
+              <p>1. &eacute;crire une lettre ou un chiffre <strong>pendant un orgasme.</strong></p>
               <p>2. prendre une image du résultat</p>
-              <p>3. l’envoyer anonymement sur le site (anecdote optionnelle ).</p>"
+              <p>3. l’envoyer anonymement sur le site ( avec une anecdote optionnelle).</p>"
   cloture_html: "
-                Les glyphes reçus seront triés en 5 catégories: de “quickie” pour
-                ultra light a “epectase” pour “black”.
-                Ces caractères n&eacute;s pendant la petite mort de plus de 3000 créateurs font des mots écrit en
-                Erographie une orgie universelle ;
-                notre bacchanale graphique."
-  faq_html: "No yet"
+                Les glyphes re&ccedil;us seront tri&eacute;s en 5 cat&eacute;gories: de &laquo; quickie &raquo; pour
+                ultra light &agrave; &laquo; &eacute;pectase &raquo; pour black.<br>
+                Ces caract&egrave;res n&eacute;s pendant la <i>petite mort</i> de plus de 3000 cr&eacute;ateurs font des mots &eacute;crits en
+                &eacute;rographie une orgie universelle ;
+                <i>notre bacchanale graphique.</i>"
+  faq_html: >
+            <p><span class="question">Pourquoi ?</span><br>
+            L'usage de la police sera r&eacute;v&eacutel&eacute le jour de sa parution</p>
+            <p><span class="question">Sur quelles surfaces &eacute;crire?</span><br>
+            Tout support qui permet une &eacute;criture d&eacute;chiffrable : papier , mur , sable,  nappe de table <i>etc ... </i>
+            Tant que le caract&egrave;re est lisible, ni la surface ni le m&eacute;dium n’a d’importance</p>
+            <p><span class="question">Qu'&eacute;crire dans la case anecdote?</span><br>
+            C’est une case optionnelle dans laquelle l’on peut raconter une petite histoire dr&ocirc;le ou insolite sur l’origine de la lettre ou les circonstances de l’orgasme par exemple</p>
+            <p><span class="question">L’anonymat est-il garanti?</span><br>
+            Nous ne disposons  d’aucun moyen permettant de conna&icirc;tre l'origine des images : ni nom, ni email.</p>
+            <p><span class="question">O&ugrave; trouver le produit final?</span><br>
+            La police et ses d&eacute;clinaisons seront expos&eacute;es sur ce site le xx/xx/xx accompagn&eacute;es d'un court-m&eacute;trage documentaire. </p>
+            <p><span class="question">Plus de questions?</span><br>
+            <span id="mailus"><a href="mailto:contact@erographie.com"> contactez-nous </a></span></p>

@@ -8,7 +8,7 @@
   font-family: "Untitled Sans";
   color: $mycolor;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 50px;
 
 }
 
@@ -28,11 +28,16 @@
 
 .bottom{
   margin: 0 auto;
-  margin-top: 200px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
+
   width: 300px;
+  font-family: "Untitled Sans";
+  text-transform: uppercase;
+
 }
 
 .illustration{width: 51px;}
@@ -71,7 +76,8 @@ textarea{
   color:$mycolor;
   resize: none;
   padding-top: 10px;
-  font-family: "Untitled Sans"
+  font-family: "Untitled Sans";
+
 
 }
 
@@ -84,4 +90,29 @@ textarea:focus {
   a{color: $mycolor; text-decoration: none;
   &:visited{color: $mycolor; text-decoration: none;}
   }
+}
+
+//////////
+.question{
+  color: red;
+}
+
+#mailus{
+  a{color: $mycolor;
+
+  }
+}
+
+.abouttile{
+  font-size: 18px;
+}
+
+.faq{
+  margin-top: 40px;
+}
+
+.up{
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
 }
