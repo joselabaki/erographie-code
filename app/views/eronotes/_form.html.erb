@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="logo"><%= inline_svg 'logo.svg' %> </div>
   <div class="form">
-        <%= form_with model: @eronote, local: true, validate:true , id: :form do |form| %>
+        <%= form_with model: @eronote, local: true, validate:true , id: :form ,  remote:true do |form| %>
             <% if @eronote.errors.any? %>
              <% @eronote.errors.full_messages.each do |msg| %>
                <label><%= msg %></label>
@@ -19,9 +19,9 @@
             </div>
 
 
-              <div>
+              <div id="padup">
               <%= form.submit id: "upload-btn" , hidden: "hidden" %>
-              <span id="upTxt" class="disabled"><%= t :upload %></span>
+              <span id="upTxt" class="disabled"><%= t :upload %></span> <span id="percent"> </span>
 
               </div>
 
