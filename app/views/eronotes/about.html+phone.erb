@@ -25,11 +25,11 @@
     <span id="c-arrow"><%= inline_svg 'c-arrow'%></span>
     <span id="close-faq"><%= inline_svg 'close-faq'%></span>
     <div class="faq-c-phone">
-    <div><%= t('faq_html') %></div>
+    <%= t('faq_html') %>
     </div>
   </div>
 
-<div class="bottom-phone-about up-phone">
+<div class="bottom-phone-about">
   <div class="link-1"><%= link_to t('back') , root_path  %></div>
   <div class="illustration-phone"> <%= inline_svg "Illu.svg" %></div>
   <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div>

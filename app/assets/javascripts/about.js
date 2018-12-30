@@ -14,6 +14,8 @@ $('#c-arrow').click(function() {
   $('.faq-c').slideDown('slow')
 })
 
+
+
 $('#close-faq').click(function() {
   $('.faq-c-phone').slideUp('slow');
   $(this).hide();
@@ -29,5 +31,4 @@ $('#c-arrow').click(function() {
   $('#close-faq').show();
 
 })
-
 });
