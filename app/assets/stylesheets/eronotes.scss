@@ -28,15 +28,15 @@
 
 .bottom{
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-
   width: 300px;
   font-family: "Untitled Sans";
   text-transform: uppercase;
+  // position: relative;
 
 }
 
@@ -107,7 +107,8 @@ textarea:focus {
 
 //////////
 .question{
-  color: red;
+  color:  grey;
+  font-size: 18px;
 }
 
 
@@ -122,16 +123,28 @@ textarea:focus {
 }
 
 .faq{
-  margin-top: 40px;
+  height: 100%;
+  margin-top: 50px;
+  width: 500px;
 }
 
 .up{
-  position: relative;
-  bottom: 0;
-  // margin: 0 auto;
-  margin-top: 50px;
+
 }
 
+#c-arrow{
+svg {
+  margin-left: 20px;
+  height: 10px;
+}}
+
+#close-faq{
+  display: none;
+svg {
+  display: inline-flex;
+  margin-left: 20px;
+  width: 20px;
+}}
 
 ///
 table{
@@ -152,4 +165,10 @@ td , tr {
 
 #padup{
   margin-top: 20px;
+}
+
+.faq-c{
+display: none;
+height: 100%;
+width:500px;
 }

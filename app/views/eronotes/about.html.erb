@@ -8,10 +8,14 @@
 </div>
   <div class="faq">
     <span class="abouttile">FAQ</span>
-    <span class="faq"><%= t('faq_html') %></span>
+    <span id="c-arrow"><%= inline_svg 'c-arrow'%></span>
+    <span id="close-faq"><%= inline_svg 'close-faq'%></span>
+    <div class="faq-c">
+  <%= t('faq_html') %>
+    </div>
   </div>
 
-<div class="bottom up">
+<div class="bottom">
   <div class="link-1"><%= link_to t('back') , root_path  %></div>
   <div class="illustration"> <%= inline_svg "Illu.svg" %></div>
   <div class="link-2"><%= link_to_unless_current "FR" , locale: :fr %> - <%= link_to_unless_current "EN" , locale: :en%></div>
