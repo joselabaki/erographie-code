@@ -1,5 +1,5 @@
-$( document ).ready(function() {
-
+$(document).on('turbolinks:load', function() {
+  
 $('#close-faq').click(function() {
   $(this).hide();
   $('#c-arrow').show();
