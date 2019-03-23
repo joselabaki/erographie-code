@@ -1,8 +1,7 @@
-
 document.addEventListener("turbolinks:load", function() {
-
-  const realFileBtn = document.getElementById("real-file");
+window.onload = function(){
   const customBtn = document.getElementById("browse-btn");
+  const realFileBtn = document.getElementById("real-file");
   const customTxt = document.getElementById("customTxt");
   const customUpBtn = document.getElementById("upTxt");
   const empty = document.getElementById('remove');
@@ -10,8 +9,7 @@ document.addEventListener("turbolinks:load", function() {
 
 
 
-
-  customBtn.addEventListener("click", function() {
+customBtn.addEventListener("click", function() {
     realFileBtn.click();
   });
 
@@ -44,7 +42,7 @@ document.addEventListener("turbolinks:load", function() {
     realUpBtn.click();
   });
 
-
+};
 
 
 });

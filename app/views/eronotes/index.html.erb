@@ -6,18 +6,23 @@
     <th>id</th>
     <th>Image</th>
     <th>short story</th>
+    <th>delete<th>
+
   </tr>
 
 
 
   <% @eronotes.each do |e| %>
   <tr>
-    <td><%= e.id%></td>
+    <td><%= e.id %></td>
     <td><%= image_tag e.eromage.to_s%></td>
+
     <% if e.body?%>
     <td><%= e.body %></td>
+    <% end %>
+    <td><%= link_to 'Destroy',  e,  method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
   </tr>
-  <% end %>
 
   <% end %>
 </table>

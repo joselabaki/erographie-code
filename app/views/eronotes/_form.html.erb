@@ -1,15 +1,15 @@
 <div class="wrapper">
   <div class="logo"><%= inline_svg 'logo.svg' %> </div>
   <div class="form">
-        <%= form_with model: @eronote, local: true, validate:true , id: :form ,  remote:true do |form| %>
+        <%= form_with model: @eronote, local: true, validate: true , id: :form ,  remote: true do |form| %>
             <% if @eronote.errors.any? %>
-             <% @eronote.errors.full_messages.each do |msg| %>
+             <%= @eronote.errors.full_messages.each do |msg| %>
                <label><%= msg %></label>
              <% end %>
              <% end %>
 
             <div class="browse">
-              <%= form.file_field :eromage, required: true , hidden: "hidden", id:"real-file"  %>
+              <%= form.file_field :eromage, required: true , hidden: "hidden", id:"real-file"   %>
               <p id="browse-btn"><%= t :browse %></p>
               <span id="customTxt"><%= t :file %></span>
               <span id="remove" class="hidden"> x </span>
